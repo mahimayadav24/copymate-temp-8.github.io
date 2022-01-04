@@ -1,0 +1,222 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: Ubuntu__Medium;
+    src: url('../Fonts/Ubuntu/Ubuntu-Medium.ttf');
+}
+
+@font-face {
+    font-family: Ubuntu__Bold;
+    src: url('../Fonts/Ubuntu/Ubuntu-Bold.ttf');
+}
+
+.bg_bann img {
+    width: 100%;
+}
+
+.sept {
+    height: 100vh;
+}
+
+.bg_bann {
+    position: relative;
+    top: 0;
+}
+
+.content_div {
+    position: absolute;
+    top: 8%;
+    right: 9%;
+    text-align: center;
+    max-width: 50%;
+}
+
+.content_div h2 {
+    color: rgba(61, 61, 61, 1);
+    font-size: calc(16pt + 0.15vw);
+    font-family: 'Ubuntu__Bold';
+    line-height: 1.2195;
+    letter-spacing: 0.03em;
+}
+
+
+
+.content_div p {
+    color: rgba(62, 62, 61, 1);
+    font-size: calc(12pt + 0.15vw);
+    font-family: 'Ubuntu__Medium';
+}
+
+.content_div h3 {
+    color: rgba(54, 127, 23, 1);
+    font-size: calc(16pt + 0.15vw);
+    font-family: 'Ubuntu__Bold';
+}
+
+.content_div p:nth-child(4) {
+    color: rgba(225, 176, 0, 1);
+    font-size: calc(12pt + 0.15vw);
+    font-family: 'Ubuntu__Medium';
+}
+
+.unq a {
+    background-color: rgba(255, 0, 0, 1);
+    box-shadow: 0px 12px 24px rgba(69, 69, 69, 0.2);
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 12px 60px;
+    color: rgba(255, 255, 255, 1);
+    font-size: calc(16pt + 0.15vw);
+    font-family: 'Ubuntu__Bold';
+    transition: .3s ease-in-out;
+}
+
+.unq a:hover {
+    background-color: rgba(255, 169, 0, 1);
+    border: 1px solid rgba(255, 169, 0, 1);
+    transition: .3s ease-in-out;
+}
+
+
+
+.left_text p {
+    font-size: calc(12pt + 0.15vw);
+    font-family: 'Ubuntu__Bold';
+}
+
+.left_text p span {
+    color: rgba(255, 0, 0, 1);
+}
+
+.content_div .ubn span {
+    color: rgba(255, 0, 0, 1);
+}
+
+.aside_text {
+    position: absolute;
+    bottom: 12%;
+    text-align: center;
+    width: 100%;
+}
+
+.row_aside {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column__aside {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.bl_col_aside {
+    height: auto;
+}
+
+.gr_col__aside {
+    height: auto;
+}
+
+@media screen and (max-width: 1080px) {
+    .content_div h2 {
+        font-size: calc(12pt + 0.15vw);
+    }
+
+    .content_div h3 {
+        font-size: calc(12pt + 0.15vw);
+    }
+
+    .content_div p:nth-child(4) {
+        font-size: calc(12pt + 0.15vw);
+    }
+
+    .unq a {
+        font-size: calc(12pt + 0.15vw);
+    }
+
+    .aside_text {
+        bottom: 0%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content_div h2 {
+        margin: 10px 0px !important;
+    }
+
+    .content_div h3 {
+        margin: 10px 0px !important;
+    }
+
+    .unq {
+        margin: 10px 0px !important;
+    }
+
+    .aside_text {
+        bottom: initial;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .content_div h2 {
+        font-size: calc(8pt + 0.15vw);
+    }
+
+    .content_div h3 {
+        font-size: calc(8pt + 0.15vw);
+        margin: 10px 0px !important;
+    }
+
+    .content_div p:nth-child(4) {
+        font-size: calc(8pt + 0.15vw);
+    }
+
+    .unq a {
+        font-size: calc(8pt + 0.15vw);
+    }
+
+    .content_div p {
+        font-size: calc(8pt + 0.15vw);
+        color: #000;
+        margin: 10px 0px !important;
+    }
+
+    .left_text p {
+        font-size: calc(8pt + 0.15vw);
+    }
+
+    .row_aside {
+        flex-direction: column;
+    }
+
+
+}
+
+
+@media screen and (max-width: 538px) {
+    .aside_text {
+        bottom: -160%;
+    }
+
+    .content_div {
+        right: 1%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .aside_text {
+        bottom: -182%;
+    }
+}
